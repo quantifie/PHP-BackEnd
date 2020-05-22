@@ -1,0 +1,680 @@
+[12-May-2020 03:38:01 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method Core\Database\Migration\MysqlAdminConnection::Get() in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlMigrations.php:47
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/ApplicationHelper.php(152): Core\Database\Migration\MysqlMigrations->__construct()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(79): Core\Libs\Helpers\ApplicationHelper::SetMigration()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(21): Core\Application->__construct()
+#3 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlMigrations.php on line 47
+[12-May-2020 03:39:18 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Typed property Core\Database\Migration\MysqlMigrations::$_connection must be an instance of Core\Database\Migration\AdminConnectionBase, Core\Database\Migration\MysqlAdminConnection used in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlMigrations.php:47
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/ApplicationHelper.php(152): Core\Database\Migration\MysqlMigrations->__construct()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(79): Core\Libs\Helpers\ApplicationHelper::SetMigration()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(21): Core\Application->__construct()
+#3 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlMigrations.php on line 47
+[12-May-2020 03:48:16 Europe/Moscow] PHP Notice:  Undefined property: Core\Database\MysqlDatabaseTable::$TableName in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlMigrations.php on line 200
+[12-May-2020 03:48:16 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Core\Database\Migration\MysqlMigrations::CheckTableExists() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlMigrations.php on line 200 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlMigrations.php:216
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlMigrations.php(200): Core\Database\Migration\MysqlMigrations->CheckTableExists()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlMigrations.php(156): Core\Database\Migration\MysqlMigrations->CreateTable()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/Migration.php(40): Core\Database\Migration\MysqlMigrations->CreateTables()
+#3 /mnt/Stora in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlMigrations.php on line 216
+[12-May-2020 04:58:46 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Core\Database\Migration\MysqlAdminDatabaseConnector::Instance(), 0 passed in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlDatabaseMigration.php on line 49 and exactly 1 expected in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlAdminDatabaseConnector.php:38
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlDatabaseMigration.php(49): Core\Database\Migration\MysqlAdminDatabaseConnector::Instance()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(161): Core\Database\Migration\MysqlDatabaseMigration->__construct()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(82): Core\Application->SetMigration()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConne in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlAdminDatabaseConnector.php on line 38
+[12-May-2020 05:00:18 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Core\Database\Migration\MysqlDatabaseMigration::__construct(), 2 passed in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php on line 161 and exactly 3 expected in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlDatabaseMigration.php:50
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(161): Core\Database\Migration\MysqlDatabaseMigration->__construct()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(82): Core\Application->SetMigration()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(21): Core\Application->__construct()
+#3 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlDatabaseMigration.php on line 50
+[12-May-2020 05:00:39 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function XLoopLicenseAdmin() in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/Migration.php:34
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(163): Core\Database\Migration\Migration->__construct()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(82): Core\Application->SetMigration()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(21): Core\Application->__construct()
+#3 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/Migration.php on line 34
+[12-May-2020 05:01:25 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Core\Database\Migration\Migration::__construct() must implement interface Core\Options\IDatabaseOption, instance of Core\Database\MysqlDatabaseConnector given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php on line 163 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/Migration.php:31
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(163): Core\Database\Migration\Migration->__construct()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(82): Core\Application->SetMigration()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(21): Core\Application->__construct()
+#3 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/Migration.php on line 31
+[12-May-2020 05:14:00 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Core\Database\MysqlDatabaseProxy::__construct(), 1 passed in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/DbContext.php on line 67 and exactly 2 expected in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseProxy.php:94
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/DbContext.php(67): Core\Database\MysqlDatabaseProxy->__construct()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/DbContext.php(55): Core\Database\DbContext->__construct()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlDatabaseMigration.php(54): Core\Database\DbContext::Get()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(162): Core\Database\Migrati in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseProxy.php on line 94
+[12-May-2020 05:15:47 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Core\Database\MysqlDatabaseProxy::__construct(), 1 passed in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/DbContext.php on line 67 and exactly 2 expected in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseProxy.php:95
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/DbContext.php(67): Core\Database\MysqlDatabaseProxy->__construct()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/DbContext.php(55): Core\Database\DbContext->__construct()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlDatabaseMigration.php(54): Core\Database\DbContext::Get()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(162): Core\Database\Migrati in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseProxy.php on line 95
+[12-May-2020 05:23:39 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Core\Database\MysqlDatabaseProxy::__construct(), 1 passed in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/DbContext.php on line 67 and exactly 2 expected in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseProxy.php:95
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/DbContext.php(67): Core\Database\MysqlDatabaseProxy->__construct()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/DbContext.php(55): Core\Database\DbContext->__construct()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlDatabaseMigration.php(54): Core\Database\DbContext::Get()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(162): Core\Database\Migrati in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseProxy.php on line 95
+[12-May-2020 17:32:43 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Core\Database\MysqlDatabaseProxy::__construct(), 1 passed in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/DbContext.php on line 67 and exactly 2 expected in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseProxy.php:95
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/DbContext.php(67): Core\Database\MysqlDatabaseProxy->__construct()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/DbContext.php(55): Core\Database\DbContext->__construct()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlDatabaseMigration.php(54): Core\Database\DbContext::Get()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(162): Core\Database\Migrati in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseProxy.php on line 95
+[12-May-2020 17:43:39 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method Core\Database\MysqlDatabaseConnector::Instance() in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseProxy.php:97
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/DbContext.php(67): Core\Database\MysqlDatabaseProxy->__construct()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/DbContext.php(55): Core\Database\DbContext->__construct()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlDatabaseMigration.php(54): Core\Database\DbContext::Get()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(158): Core\Database\Migration\MysqlDatabaseMigration->__construct()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(82): Core\Application->SetM in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseProxy.php on line 97
+[12-May-2020 18:01:42 Europe/Moscow] PHP Fatal error:  Uncaught Error: Typed property Core\Database\Migration\MysqlDatabaseMigration::$_databaseOption must not be accessed before initialization in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlDatabaseMigration.php:68
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/Migration.php(36): Core\Database\Migration\MysqlDatabaseMigration->CreateDatabase()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(163): Core\Database\Migration\Migration->__construct()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(84): Core\Application->SetMigration()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(21): Core\Application->__construct()
+#4 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlDatabaseMigration.php on line 68
+[12-May-2020 18:20:44 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$StartId in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 48
+[12-May-2020 18:20:44 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$ShowDeleted in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 48
+[12-May-2020 18:20:44 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Logic\LicenseLogic::List() must be of the type int, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 48 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php:41
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(48): Logic\LicenseLogic->List()
+#1 [internal function]: Controllers\LicenseController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(142): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(120): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application->Start()
+#5 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php on line 41
+[12-May-2020 18:26:01 Europe/Moscow] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 16384 bytes) in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlSqlAdapter.php on line 87
+[12-May-2020 18:27:32 Europe/Moscow] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 16384 bytes) in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlSqlAdapter.php on line 87
+[12-May-2020 18:29:42 Europe/Moscow] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 4096 bytes) in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlSqlAdapter.php on line 94
+[12-May-2020 18:31:49 Europe/Moscow] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 4096 bytes) in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlSqlAdapter.php on line 94
+[12-May-2020 20:39:24 Europe/Moscow] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlAdminDatabaseConnector.php on line 52
+[12-May-2020 20:40:52 Europe/Moscow] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlAdminDatabaseConnector.php on line 52
+[12-May-2020 20:43:18 Europe/Moscow] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlAdminDatabaseConnector.php on line 52
+[12-May-2020 20:43:37 Europe/Moscow] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseConnector.php on line 55
+[13-May-2020 03:10:24 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$StartId in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 48
+[13-May-2020 03:10:24 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$ShowDeleted in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 48
+[13-May-2020 03:10:24 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Logic\LicenseLogic::List() must be of the type int, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 48 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php:39
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(48): Logic\LicenseLogic->List()
+#1 [internal function]: Controllers\LicenseController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application->Start()
+#5 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php on line 39
+[13-May-2020 03:11:24 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$StartId in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 48
+[13-May-2020 03:11:24 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$ShowDeleted in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 48
+[13-May-2020 03:11:24 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Logic\LicenseLogic::List() must be of the type int, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 48 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php:39
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(48): Logic\LicenseLogic->List()
+#1 [internal function]: Controllers\LicenseController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application->Start()
+#5 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php on line 39
+[13-May-2020 03:12:20 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$StartId in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 48
+[13-May-2020 03:12:20 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$ShowDeleted in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 48
+[13-May-2020 03:12:20 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Logic\LicenseLogic::List() must be of the type int, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 48 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php:39
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(48): Logic\LicenseLogic->List()
+#1 [internal function]: Controllers\LicenseController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application->Start()
+#5 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php on line 39
+[13-May-2020 03:13:13 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$StartId in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 48
+[13-May-2020 03:13:13 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$ShowDeleted in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 48
+[13-May-2020 03:13:13 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Logic\LicenseLogic::List() must be of the type int, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 48 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php:39
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(48): Logic\LicenseLogic->List()
+#1 [internal function]: Controllers\LicenseController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application->Start()
+#5 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php on line 39
+[13-May-2020 03:14:13 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$StartId in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 48
+[13-May-2020 03:14:13 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$ShowDeleted in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 48
+[13-May-2020 03:14:13 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Logic\LicenseLogic::List() must be of the type int, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 48 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php:39
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(48): Logic\LicenseLogic->List()
+#1 [internal function]: Controllers\LicenseController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application->Start()
+#5 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php on line 39
+[13-May-2020 03:49:13 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$Token in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45
+[13-May-2020 03:49:13 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Helpers\AuthHelper::CheckManagerToken() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php:13
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(45): Helpers\AuthHelper::CheckManagerToken()
+#1 [internal function]: Controllers\LicenseController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php on line 13
+[13-May-2020 03:49:50 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$Token in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45
+[13-May-2020 03:49:50 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Helpers\AuthHelper::CheckManagerToken() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php:13
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(45): Helpers\AuthHelper::CheckManagerToken()
+#1 [internal function]: Controllers\LicenseController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php on line 13
+[13-May-2020 03:49:54 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$Token in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LauncherController.php on line 99
+[13-May-2020 03:49:54 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Helpers\AuthHelper::CheckManagerToken() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LauncherController.php on line 99 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php:13
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LauncherController.php(99): Helpers\AuthHelper::CheckManagerToken()
+#1 [internal function]: Controllers\LauncherController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Applicat in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php on line 13
+[13-May-2020 03:50:45 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$Token in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LauncherController.php on line 99
+[13-May-2020 03:50:45 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Helpers\AuthHelper::CheckManagerToken() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LauncherController.php on line 99 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php:13
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LauncherController.php(99): Helpers\AuthHelper::CheckManagerToken()
+#1 [internal function]: Controllers\LauncherController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Applicat in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php on line 13
+[13-May-2020 03:51:58 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$Token in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45
+[13-May-2020 03:51:58 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Helpers\AuthHelper::CheckManagerToken() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php:13
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(45): Helpers\AuthHelper::CheckManagerToken()
+#1 [internal function]: Controllers\LicenseController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php on line 13
+[13-May-2020 03:52:39 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$Token in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45
+[13-May-2020 03:52:39 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Helpers\AuthHelper::CheckManagerToken() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php:13
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(45): Helpers\AuthHelper::CheckManagerToken()
+#1 [internal function]: Controllers\LicenseController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php on line 13
+[13-May-2020 03:53:08 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$Token in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45
+[13-May-2020 03:53:08 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Helpers\AuthHelper::CheckManagerToken() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php:13
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(45): Helpers\AuthHelper::CheckManagerToken()
+#1 [internal function]: Controllers\LicenseController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php on line 13
+[13-May-2020 03:53:56 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$Token in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45
+[13-May-2020 03:53:56 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Helpers\AuthHelper::CheckManagerToken() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php:13
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(45): Helpers\AuthHelper::CheckManagerToken()
+#1 [internal function]: Controllers\LicenseController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php on line 13
+[13-May-2020 03:54:49 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$Token in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45
+[13-May-2020 03:54:49 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Helpers\AuthHelper::CheckManagerToken() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php:13
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(45): Helpers\AuthHelper::CheckManagerToken()
+#1 [internal function]: Controllers\LicenseController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php on line 13
+[13-May-2020 03:55:20 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$Token in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45
+[13-May-2020 03:55:20 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Helpers\AuthHelper::CheckManagerToken() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php:13
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(45): Helpers\AuthHelper::CheckManagerToken()
+#1 [internal function]: Controllers\LicenseController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php on line 13
+[13-May-2020 03:56:03 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$Token in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45
+[13-May-2020 03:56:03 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Helpers\AuthHelper::CheckManagerToken() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php:13
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(45): Helpers\AuthHelper::CheckManagerToken()
+#1 [internal function]: Controllers\LicenseController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php on line 13
+[13-May-2020 03:56:17 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$Token in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45
+[13-May-2020 03:56:17 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Helpers\AuthHelper::CheckManagerToken() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php:13
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(45): Helpers\AuthHelper::CheckManagerToken()
+#1 [internal function]: Controllers\LicenseController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php on line 13
+[13-May-2020 03:58:15 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$Token in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45
+[13-May-2020 03:58:15 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Helpers\AuthHelper::CheckManagerToken() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php:13
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(45): Helpers\AuthHelper::CheckManagerToken()
+#1 [internal function]: Controllers\LicenseController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php on line 13
+[13-May-2020 03:58:39 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$Token in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45
+[13-May-2020 03:58:39 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Helpers\AuthHelper::CheckManagerToken() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php:13
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(45): Helpers\AuthHelper::CheckManagerToken()
+#1 [internal function]: Controllers\LicenseController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php on line 13
+[13-May-2020 03:58:44 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$Token in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45
+[13-May-2020 03:58:44 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Helpers\AuthHelper::CheckManagerToken() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 45 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php:13
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(45): Helpers\AuthHelper::CheckManagerToken()
+#1 [internal function]: Controllers\LicenseController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php on line 13
+[13-May-2020 04:16:47 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$Token in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LauncherController.php on line 99
+[13-May-2020 04:16:47 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Helpers\AuthHelper::CheckManagerToken() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LauncherController.php on line 99 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php:13
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LauncherController.php(99): Helpers\AuthHelper::CheckManagerToken()
+#1 [internal function]: Controllers\LauncherController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Applicat in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php on line 13
+[13-May-2020 04:16:49 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$Token in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/MetropolisController.php on line 90
+[13-May-2020 04:16:49 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Helpers\AuthHelper::CheckManagerToken() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/MetropolisController.php on line 90 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php:13
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/MetropolisController.php(90): Helpers\AuthHelper::CheckManagerToken()
+#1 [internal function]: Controllers\MetropolisController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Ap in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php on line 13
+[13-May-2020 04:56:04 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$Token in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/EventController.php on line 126
+[13-May-2020 04:56:04 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Helpers\AuthHelper::CheckManagerToken() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/EventController.php on line 126 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php:13
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/EventController.php(126): Helpers\AuthHelper::CheckManagerToken()
+#1 [internal function]: Controllers\EventController->Get()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application->Sta in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php on line 13
+[13-May-2020 04:57:12 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$StartId in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 48
+[13-May-2020 04:57:12 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$ShowDeleted in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 48
+[13-May-2020 04:57:12 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Logic\LicenseLogic::List() must be of the type int, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 48 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php:39
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(48): Logic\LicenseLogic->List()
+#1 [internal function]: Controllers\LicenseController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application->Start()
+#5 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php on line 39
+[13-May-2020 04:59:14 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$Token in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LauncherController.php on line 99
+[13-May-2020 04:59:14 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Helpers\AuthHelper::CheckManagerToken() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LauncherController.php on line 99 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php:13
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LauncherController.php(99): Helpers\AuthHelper::CheckManagerToken()
+#1 [internal function]: Controllers\LauncherController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Applicat in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php on line 13
+[13-May-2020 04:59:22 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$Token in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/MetropolisController.php on line 90
+[13-May-2020 04:59:22 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Helpers\AuthHelper::CheckManagerToken() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/MetropolisController.php on line 90 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php:13
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/MetropolisController.php(90): Helpers\AuthHelper::CheckManagerToken()
+#1 [internal function]: Controllers\MetropolisController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Ap in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php on line 13
+[13-May-2020 05:00:08 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$Token in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LauncherController.php on line 126
+[13-May-2020 05:00:08 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Helpers\AuthHelper::CheckManagerToken() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LauncherController.php on line 126 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php:13
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LauncherController.php(126): Helpers\AuthHelper::CheckManagerToken()
+#1 [internal function]: Controllers\LauncherController->Get()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Applica in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php on line 13
+[13-May-2020 23:28:55 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$Token in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/MetropolisController.php on line 120
+[13-May-2020 23:28:55 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Helpers\AuthHelper::CheckManagerToken() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/MetropolisController.php on line 120 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php:13
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/MetropolisController.php(120): Helpers\AuthHelper::CheckManagerToken()
+#1 [internal function]: Controllers\MetropolisController->Get()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\A in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php on line 13
+[13-May-2020 23:40:39 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$Token in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 103
+[13-May-2020 23:40:39 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Helpers\AuthHelper::CheckManagerToken() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 103 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php:13
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(103): Helpers\AuthHelper::CheckManagerToken()
+#1 [internal function]: Controllers\LicenseController->Check()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Applicat in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php on line 13
+[15-May-2020 00:13:30 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$OsType in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/EventController.php on line 70
+[15-May-2020 00:13:31 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 3 passed to Core\Database\TableActionContainers\Where::__construct() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlTableProxy.php on line 248 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/TableActionContainers/Where.php:39
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlTableProxy.php(248): Core\Database\TableActionContainers\Where->__construct()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/EventController.php(70): Core\Database\MysqlTableProxy->Where()
+#2 [internal function]: Controllers\EventController->List()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/Met in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/TableActionContainers/Where.php on line 39
+[15-May-2020 01:10:48 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Typed property Models\DatabaseModels\License::$Licensee must be an instance of Models\DatabaseModels\Licensee, bool used in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php:51
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php(26): Core\Libs\Helpers\Mapper::Map()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php(70): Core\Libs\Helpers\Mapper::MapList()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(55): Logic\LicenseLogic->List()
+#3 [internal function]: Controllers\LicenseController->List()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#5 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(1 in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php on line 51
+[15-May-2020 01:12:06 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Typed property Models\DatabaseModels\License::$Licensee must be an instance of Models\DatabaseModels\Licensee, bool used in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php:51
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php(26): Core\Libs\Helpers\Mapper::Map()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php(70): Core\Libs\Helpers\Mapper::MapList()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(55): Logic\LicenseLogic->List()
+#3 [internal function]: Controllers\LicenseController->List()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#5 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(1 in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php on line 51
+[15-May-2020 01:12:54 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Typed property Models\DatabaseModels\License::$Licensee must be an instance of Models\DatabaseModels\Licensee, bool used in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php:51
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php(26): Core\Libs\Helpers\Mapper::Map()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php(73): Core\Libs\Helpers\Mapper::MapList()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(55): Logic\LicenseLogic->List()
+#3 [internal function]: Controllers\LicenseController->List()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#5 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(1 in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php on line 51
+[15-May-2020 01:16:21 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Typed property Models\DatabaseModels\License::$Licensee must be an instance of Models\DatabaseModels\Licensee, bool used in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php:52
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php(26): Core\Libs\Helpers\Mapper::Map()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php(73): Core\Libs\Helpers\Mapper::MapList()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(55): Logic\LicenseLogic->List()
+#3 [internal function]: Controllers\LicenseController->List()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#5 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(1 in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php on line 52
+[15-May-2020 01:17:18 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Typed property Models\DatabaseModels\License::$Licensee must be an instance of Models\DatabaseModels\Licensee, bool used in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php:53
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php(26): Core\Libs\Helpers\Mapper::Map()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php(73): Core\Libs\Helpers\Mapper::MapList()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(55): Logic\LicenseLogic->List()
+#3 [internal function]: Controllers\LicenseController->List()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#5 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(1 in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php on line 53
+[15-May-2020 01:20:30 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Typed property Models\DatabaseModels\License::$Licensee must be an instance of Models\DatabaseModels\Licensee, null used in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php:56
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php(26): Core\Libs\Helpers\Mapper::Map()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php(72): Core\Libs\Helpers\Mapper::MapList()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(55): Logic\LicenseLogic->List()
+#3 [internal function]: Controllers\LicenseController->List()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#5 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(1 in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php on line 56
+[15-May-2020 01:23:09 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Typed property Models\DatabaseModels\License::$Licensee must be an instance of Models\DatabaseModels\Licensee, null used in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php:59
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php(26): Core\Libs\Helpers\Mapper::Map()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php(72): Core\Libs\Helpers\Mapper::MapList()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(55): Logic\LicenseLogic->List()
+#3 [internal function]: Controllers\LicenseController->List()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#5 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(1 in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php on line 59
+[15-May-2020 01:24:38 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Typed property Models\DatabaseModels\License::$Licensee must be an instance of Models\DatabaseModels\Licensee, null used in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php:58
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php(27): Core\Libs\Helpers\Mapper::Map()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php(71): Core\Libs\Helpers\Mapper::MapList()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(55): Logic\LicenseLogic->List()
+#3 [internal function]: Controllers\LicenseController->List()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#5 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(1 in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php on line 58
+[15-May-2020 01:25:40 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Typed property Models\DatabaseModels\License::$Licensee must be an instance of Models\DatabaseModels\Licensee, null used in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php:58
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php(26): Core\Libs\Helpers\Mapper::Map()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php(71): Core\Libs\Helpers\Mapper::MapList()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(55): Logic\LicenseLogic->List()
+#3 [internal function]: Controllers\LicenseController->List()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#5 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(1 in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php on line 58
+[15-May-2020 01:26:55 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Typed property Models\DatabaseModels\License::$Licensee must be an instance of Models\DatabaseModels\Licensee, null used in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php:58
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php(26): Core\Libs\Helpers\Mapper::Map()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php(71): Core\Libs\Helpers\Mapper::MapList()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(55): Logic\LicenseLogic->List()
+#3 [internal function]: Controllers\LicenseController->List()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#5 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(1 in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php on line 58
+[15-May-2020 01:27:14 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Typed property Models\DatabaseModels\License::$Licensee must be an instance of Models\DatabaseModels\Licensee, null used in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php:58
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php(27): Core\Libs\Helpers\Mapper::Map()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php(71): Core\Libs\Helpers\Mapper::MapList()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(55): Logic\LicenseLogic->List()
+#3 [internal function]: Controllers\LicenseController->List()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#5 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(1 in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php on line 58
+[15-May-2020 01:27:44 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Typed property Models\DatabaseModels\License::$Licensee must be an instance of Models\DatabaseModels\Licensee, null used in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php:57
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php(26): Core\Libs\Helpers\Mapper::Map()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php(72): Core\Libs\Helpers\Mapper::MapList()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(55): Logic\LicenseLogic->List()
+#3 [internal function]: Controllers\LicenseController->List()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#5 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(1 in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php on line 57
+[15-May-2020 04:45:10 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$StartId in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 55
+[15-May-2020 04:45:10 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$ShowDeleted in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 55
+[15-May-2020 04:45:10 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Logic\LicenseLogic::List() must be of the type int, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 55 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php:45
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(55): Logic\LicenseLogic->List()
+#1 [internal function]: Controllers\LicenseController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application->Start()
+#5 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php on line 45
+[15-May-2020 04:45:32 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$StartId in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 55
+[15-May-2020 04:45:32 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$ShowDeleted in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 55
+[15-May-2020 04:45:32 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Logic\LicenseLogic::List() must be of the type int, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 55 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php:45
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(55): Logic\LicenseLogic->List()
+#1 [internal function]: Controllers\LicenseController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application->Start()
+#5 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php on line 45
+[15-May-2020 09:15:26 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Typed property Core\Http\HttpRequest::$Body must be object, null used in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Http/HttpRequest.php:63
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(133): Core\Http\HttpRequest->__construct()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application->Start()
+#3 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Http/HttpRequest.php on line 63
+[15-May-2020 09:34:32 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$Token in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 209
+[15-May-2020 09:34:32 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Helpers\AuthHelper::CheckManagerToken() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 209 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php:13
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(209): Helpers\AuthHelper::CheckManagerToken()
+#1 [internal function]: Controllers\LicenseController->MetropolisConnectCheck()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(2 in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php on line 13
+[15-May-2020 09:52:32 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Typed property Models\DatabaseModels\License::$Licensee must be an instance of Models\DatabaseModels\Licensee, bool used in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php:54
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php(26): Core\Libs\Helpers\Mapper::Map()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php(73): Core\Libs\Helpers\Mapper::MapList()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(74): Logic\LicenseLogic->List()
+#3 [internal function]: Controllers\LicenseController->List()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#5 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(1 in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php on line 54
+[15-May-2020 09:54:58 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Typed property Models\DatabaseModels\License::$Licensee must be an instance of Models\DatabaseModels\Licensee, string used in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php:54
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php(26): Core\Libs\Helpers\Mapper::Map()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php(73): Core\Libs\Helpers\Mapper::MapList()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(74): Logic\LicenseLogic->List()
+#3 [internal function]: Controllers\LicenseController->List()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#5 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Libs/Helpers/Mapper.php on line 54
+[15-May-2020 10:27:25 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$IncludeSubLicenses in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 95
+[15-May-2020 10:27:25 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Logic\LicenseLogic::Get() must be of the type bool, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 95 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php:110
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(95): Logic\LicenseLogic->Get()
+#1 [internal function]: Controllers\LicenseController->Get()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application->Start()
+#5 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php on line 110
+[15-May-2020 10:28:07 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$IncludeSubLicenses in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 95
+[15-May-2020 10:28:07 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Logic\LicenseLogic::Get() must be of the type bool, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 95 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php:110
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(95): Logic\LicenseLogic->Get()
+#1 [internal function]: Controllers\LicenseController->Get()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(140): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(118): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application->Start()
+#5 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Logic/LicenseLogic.php on line 110
+[15-May-2020 10:44:11 Europe/Moscow] PHP Fatal error:  Uncaught Error: Typed static property Core\Database\MysqlDatabaseConnectorFactory::$_databaseOption must not be accessed before initialization in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseConnectorFactory.php:21
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlSqlAdapter.php(50): Core\Database\MysqlDatabaseConnectorFactory->GetConnector()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlTableProxy.php(94): Core\Database\MysqlSqlAdapter->__construct()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/DbContext.php(60): Core\Database\MysqlTableProxy->__construct()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Controller.php(53): Core\Database\DbContext->__construct()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManage in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseConnectorFactory.php on line 21
+[15-May-2020 10:44:16 Europe/Moscow] PHP Fatal error:  Uncaught Error: Typed static property Core\Database\MysqlDatabaseConnectorFactory::$_databaseOption must not be accessed before initialization in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseConnectorFactory.php:21
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlSqlAdapter.php(50): Core\Database\MysqlDatabaseConnectorFactory->GetConnector()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlTableProxy.php(94): Core\Database\MysqlSqlAdapter->__construct()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/DbContext.php(60): Core\Database\MysqlTableProxy->__construct()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Controller.php(53): Core\Database\DbContext->__construct()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManage in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseConnectorFactory.php on line 21
+[15-May-2020 10:44:22 Europe/Moscow] PHP Fatal error:  Uncaught Error: Typed static property Core\Database\MysqlDatabaseConnectorFactory::$_databaseOption must not be accessed before initialization in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseConnectorFactory.php:21
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlSqlAdapter.php(50): Core\Database\MysqlDatabaseConnectorFactory->GetConnector()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlTableProxy.php(94): Core\Database\MysqlSqlAdapter->__construct()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/DbContext.php(60): Core\Database\MysqlTableProxy->__construct()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Controller.php(53): Core\Database\DbContext->__construct()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManage in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseConnectorFactory.php on line 21
+[15-May-2020 10:46:23 Europe/Moscow] PHP Fatal error:  Uncaught Error: Typed static property Core\Database\MysqlDatabaseConnectorFactory::$_databaseOption must not be accessed before initialization in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseConnectorFactory.php:26
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlDatabaseMigration.php(52): Core\Database\MysqlDatabaseConnectorFactory->GetAdminConnector()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(155): Core\Database\Migration\MysqlDatabaseMigration->__construct()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(78): Core\Application->SetMigration()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(21): Core\Application->__construct()
+#4 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseConnectorFactory.php on line 26
+[15-May-2020 10:48:15 Europe/Moscow] PHP Fatal error:  Uncaught Error: Typed static property Core\Database\MysqlDatabaseConnectorFactory::$_databaseOption must not be accessed before initialization in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseConnectorFactory.php:26
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlDatabaseMigration.php(52): Core\Database\MysqlDatabaseConnectorFactory->GetAdminConnector()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(155): Core\Database\Migration\MysqlDatabaseMigration->__construct()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(78): Core\Application->SetMigration()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(21): Core\Application->__construct()
+#4 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseConnectorFactory.php on line 26
+[15-May-2020 10:49:18 Europe/Moscow] PHP Fatal error:  Uncaught Error: Typed static property Core\Database\MysqlDatabaseConnectorFactory::$_databaseOption must not be accessed before initialization in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseConnectorFactory.php:26
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlDatabaseMigration.php(54): Core\Database\MysqlDatabaseConnectorFactory->GetAdminConnector()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(155): Core\Database\Migration\MysqlDatabaseMigration->__construct()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(78): Core\Application->SetMigration()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(21): Core\Application->__construct()
+#4 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseConnectorFactory.php on line 26
+[15-May-2020 10:49:52 Europe/Moscow] PHP Fatal error:  Uncaught Error: Typed static property Core\Database\MysqlDatabaseConnectorFactory::$_databaseOption must not be accessed before initialization in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseConnectorFactory.php:21
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlDatabaseMigration.php(53): Core\Database\MysqlDatabaseConnectorFactory->GetConnector()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(155): Core\Database\Migration\MysqlDatabaseMigration->__construct()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(78): Core\Application->SetMigration()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(21): Core\Application->__construct()
+#4 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseConnectorFactory.php on line 21
+[15-May-2020 10:50:06 Europe/Moscow] PHP Fatal error:  Uncaught Error: Typed static property Core\Database\MysqlDatabaseConnectorFactory::$_databaseOption must not be accessed before initialization in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseConnectorFactory.php:21
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlDatabaseMigration.php(53): Core\Database\MysqlDatabaseConnectorFactory->GetConnector()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(155): Core\Database\Migration\MysqlDatabaseMigration->__construct()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(78): Core\Application->SetMigration()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(21): Core\Application->__construct()
+#4 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseConnectorFactory.php on line 21
+[15-May-2020 10:50:21 Europe/Moscow] PHP Fatal error:  Uncaught Error: Typed static property Core\Database\MysqlDatabaseConnectorFactory::$_databaseOption must not be accessed before initialization in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlDatabaseMigration.php:53
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(155): Core\Database\Migration\MysqlDatabaseMigration->__construct()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(78): Core\Application->SetMigration()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(21): Core\Application->__construct()
+#3 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlDatabaseMigration.php on line 53
+[15-May-2020 10:51:31 Europe/Moscow] PHP Fatal error:  Uncaught Error: Typed static property Core\Database\MysqlDatabaseConnectorFactory::$_databaseOption must not be accessed before initialization in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseConnectorFactory.php:17
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlDatabaseMigration.php(52): Core\Database\MysqlDatabaseConnectorFactory->__construct()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(155): Core\Database\Migration\MysqlDatabaseMigration->__construct()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(78): Core\Application->SetMigration()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(21): Core\Application->__construct()
+#4 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseConnectorFactory.php on line 17
+[15-May-2020 10:51:58 Europe/Moscow] PHP Fatal error:  Uncaught Error: Typed static property Core\Database\MysqlDatabaseConnectorFactory::$_databaseOption must not be accessed before initialization in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseConnectorFactory.php:33
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlDatabaseMigration.php(53): Core\Database\MysqlDatabaseConnectorFactory->GetAdminConnector()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(155): Core\Database\Migration\MysqlDatabaseMigration->__construct()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(78): Core\Application->SetMigration()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(21): Core\Application->__construct()
+#4 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseConnectorFactory.php on line 33
+[15-May-2020 10:52:11 Europe/Moscow] PHP Fatal error:  Uncaught Error: Typed static property Core\Database\MysqlDatabaseConnectorFactory::$_databaseOption must not be accessed before initialization in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseConnectorFactory.php:33
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlDatabaseMigration.php(53): Core\Database\MysqlDatabaseConnectorFactory->GetAdminConnector()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(155): Core\Database\Migration\MysqlDatabaseMigration->__construct()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(78): Core\Application->SetMigration()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(21): Core\Application->__construct()
+#4 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseConnectorFactory.php on line 33
+[15-May-2020 10:58:37 Europe/Moscow] PHP Fatal error:  Uncaught Error: Typed static property Core\Database\MysqlDatabaseConnectorFactory::$_databaseOption must not be accessed before initialization in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseConnectorFactory.php:28
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlSqlAdapter.php(50): Core\Database\MysqlDatabaseConnectorFactory->GetConnector()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlTableProxy.php(94): Core\Database\MysqlSqlAdapter->__construct()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/DbContext.php(60): Core\Database\MysqlTableProxy->__construct()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(79): Core\Database\DbContext->__construct()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManag in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlDatabaseConnectorFactory.php on line 28
+[15-May-2020 11:03:12 Europe/Moscow] PHP Fatal error:  Uncaught Error: Typed property Core\Application::$_dbContext must not be accessed before initialization in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php:158
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(84): Core\Application->SetMigration()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(21): Core\Application->__construct()
+#2 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php on line 158
+[15-May-2020 11:03:55 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Core\Database\Migration\MysqlDatabaseMigration::__construct(), 0 passed in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php on line 156 and exactly 1 expected in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlDatabaseMigration.php:48
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(156): Core\Database\Migration\MysqlDatabaseMigration->__construct()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(82): Core\Application->SetMigration()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(21): Core\Application->__construct()
+#3 {main}
+  thrown in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/Migration/MysqlDatabaseMigration.php on line 48
+[15-May-2020 11:04:47 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$Token in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 71
+[15-May-2020 11:04:47 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Helpers\AuthHelper::CheckManagerToken() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php on line 71 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php:13
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/LicenseController.php(71): Helpers\AuthHelper::CheckManagerToken()
+#1 [internal function]: Controllers\LicenseController->List()
+#2 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(144): ReflectionMethod->invoke()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(122): Core\Application->SetControllerAndAction()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/index.php(28): Core\Application in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Helpers/AuthHelper.php on line 13
+[16-May-2020 04:46:25 Europe/Moscow] PHP Notice:  Undefined property: stdClass::$OsType in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/EventController.php on line 70
+[16-May-2020 04:46:25 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 3 passed to Core\Database\TableActionContainers\Where::__construct() must be of the type string, null given, called in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlTableProxy.php on line 248 and defined in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/TableActionContainers/Where.php:39
+Stack trace:
+#0 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/MysqlTableProxy.php(248): Core\Database\TableActionContainers\Where->__construct()
+#1 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Controllers/EventController.php(70): Core\Database\MysqlTableProxy->Where()
+#2 [internal function]: Controllers\EventController->List()
+#3 /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Application.php(144): ReflectionMethod->invoke()
+#4 /mnt/Storage/Projects/XLoop/MetropolisConnect/Met in /mnt/Storage/Projects/XLoop/MetropolisConnect/MetropolisConnectManagerV2-BackEnd/Core/Database/TableActionContainers/Where.php on line 39
+[22-May-2020 00:07:29 Europe/Moscow] PHP Notice:  Undefined property: Core\Database\DbContext::$XLoopApplications in /mnt/Storage/Projects/Web/QBackEnd-Development/Core/Database/Migration/Migration.php on line 48
+[22-May-2020 00:07:29 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to a member function Insert() on null in /mnt/Storage/Projects/Web/QBackEnd-Development/Core/Database/Migration/Migration.php:48
+Stack trace:
+#0 /mnt/Storage/Projects/Web/QBackEnd-Development/Core/Application.php(102): Core\Database\Migration\Migration->Seed()
+#1 /mnt/Storage/Projects/Web/QBackEnd-Development/index.php(19): Core\Application->__construct()
+#2 {main}
+  thrown in /mnt/Storage/Projects/Web/QBackEnd-Development/Core/Database/Migration/Migration.php on line 48
+[22-May-2020 02:44:59 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method App\Origins::SetDevelopmentOrigins() in /mnt/Storage/Projects/Web/QBackEnd-Development/Core/Application.php:77
+Stack trace:
+#0 /mnt/Storage/Projects/Web/QBackEnd-Development/index.php(25): Core\Application->__construct()
+#1 {main}
+  thrown in /mnt/Storage/Projects/Web/QBackEnd-Development/Core/Application.php on line 77
+[22-May-2020 02:48:25 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'Core\Database\DbContextFactory' not found in /mnt/Storage/Projects/Web/QBackEnd-Development/Core/Database/Migration/MysqlDatabaseMigration.php:51
+Stack trace:
+#0 /mnt/Storage/Projects/Web/QBackEnd-Development/Core/Application.php(141): Core\Database\Migration\MysqlDatabaseMigration->__construct()
+#1 /mnt/Storage/Projects/Web/QBackEnd-Development/Core/Application.php(80): Core\Application->SetMigration()
+#2 /mnt/Storage/Projects/Web/QBackEnd-Development/index.php(25): Core\Application->__construct()
+#3 {main}
+  thrown in /mnt/Storage/Projects/Web/QBackEnd-Development/Core/Database/Migration/MysqlDatabaseMigration.php on line 51
