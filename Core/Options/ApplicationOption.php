@@ -16,24 +16,24 @@ class ApplicationOption implements IApplicationOption
      * @var bool
      * Determines if the environment type is development or production
      */
-    private ?bool $_isDevelopment = false;
+    private ?bool $_isDevelopment;
 
     /**
      * @var bool|null
      * Enable/Disable Reports
      */
-    private bool $_reportErrors = true;
+    private bool $_reportErrors;
 
     /**
      * @var bool
      * Enable/Disable Migrations
      */
-    private ?bool $_enableMigration = false;
+    private ?bool $_enableMigration;
 
     /**
      * @var bool
      */
-    private bool $_filterOrigins = true;
+    private bool $_filterOrigins;
 
     private int $_uploadSizeInMb = 256;
     #endregion
@@ -50,22 +50,19 @@ class ApplicationOption implements IApplicationOption
      * @param int $uploadSizeInMb
      */
     public function __construct(
-        bool $isDevelopment = null,
-        bool $enableMigration = null,
+        bool $isDevelopment,
+        bool $enableMigration,
         bool $reportErrors = true,
         bool $filterOrigins = true,
-        int $uploadSizeInMb = 4)
+        int $uploadSizeInMb = 256)
     {
         try {
-            if (isset($isDevelopment))
-                $this->_enableMigration = $enableMigration;
-
-            if (isset($enableMigration))
-                $this->_isDevelopment = $isDevelopment;
-
+            $this->_enableMigration = $enableMigration;
+            $this->_isDevelopment = $isDevelopment;
             $this->_reportErrors = $reportErrors;
             $this->_filterOrigins = $filterOrigins;
             $this->_uploadSizeInMb = $uploadSizeInMb;
+
         } catch (Exception $e) {
             new NoApplicationOptionException();
         }
@@ -74,27 +71,33 @@ class ApplicationOption implements IApplicationOption
     #endregion
 
     #region Public Methods
-    public function IsDevelopment(): bool {
+    public function IsDevelopment(): bool
+    {
         return $this->_isDevelopment;
     }
 
-    public function ReportErrors(): bool {
+    public function ReportErrors(): bool
+    {
         return $this->_reportErrors;
     }
 
-    public function FilterOrigins(): bool {
+    public function FilterOrigins(): bool
+    {
         return $this->_filterOrigins;
     }
 
-    public function EnableMigration(): bool {
+    public function EnableMigration(): bool
+    {
         return $this->_enableMigration;
     }
 
-    public function SetEnableMigration(int $enableMigration) {
+    public function SetEnableMigration(int $enableMigration)
+    {
         $this->_enableMigration = $enableMigration;
     }
 
-    public function UploadSize(): int {
+    public function UploadSize(): int
+    {
         return $this->_uploadSizeInMb;
     }
     #endregion

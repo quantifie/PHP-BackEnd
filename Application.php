@@ -12,6 +12,7 @@ use Core\Options\IDatabaseOption;
 use Core\Options\MysqlDatabaseOption;
 use Core\Route\RouteBase;
 use Core\Security\OriginBase;
+use Core\Libs\Helpers\DateTime;
 
 class Application
 {
@@ -27,8 +28,8 @@ class Application
         $this->applicationOption = new ApplicationOption(true,true);
         $this->databaseOption = new MysqlDatabaseOption(
             "localhost",
-            "XLoopLicenseManagerTest",
-            "XLoopLicenseAdmin",
+            "MvcText",
+            "MvcUser",
             "Crim41Mesh82",
             "qifie",
             "Crim41Mesh82");
@@ -37,9 +38,28 @@ class Application
         $this->routes = new Routes();
         $this->dbContext = new ApplicationDbContext();
         $this->core = new Core($this->databaseOption, $this->applicationOption, $this->routes, $this->origins, $this->dbContext);
+        $this->Seed();
+        $this->Start();
     }
 
-    public function Start(){
+    private function Start(){
         $this->core->Start();
+    }
+
+    private function Seed() {
+        $this->dbContext->Licenses->Insert([
+            "Id" => 10,
+            "Active" => 1,
+            "CreationDate" => DateTime::Now(),
+            "SubscriptionStartDate" => DateTime::Now(),
+            "SubscriptionEndDate" => DateTime::Now(),
+            "LicenseToken" => "new-license-token",
+            "Type" => 1,
+            "ManagerId" => -1,
+            "Count" => 0,
+            "Deleted" => 0,
+            "LicenseeId" => 1
+        ]);
+
     }
 }

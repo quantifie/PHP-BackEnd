@@ -15,60 +15,60 @@ class MysqlDatabaseOption implements IDatabaseOption
      * @var string
      * Database Type [mysql, pgsql]
      */
-    private string $_type ;
+    private string $_type;
 
     /**
      * @var string
      * Hostname
      */
-    private string $_host = "localhost";
+    private string $_host;
 
     /**
      * @var string
      * Database Name
      */
-    private string $_dBName = "DefaultDatabase";
+    private string $_dBName;
 
     /**
      * @var string
      * Scheme Name
      */
-    private string $_schemaName = "private";
+    private string $_schemaName;
 
     /**
      * @var string
      * Database User
      */
-    private string $_dbUser= "DefaultUser";
+    private string $_dbUser;
 
     /**
      * @var string
      * User Password
      */
-    private string $_dbPassword = "DefaultPassword";
+    private string $_dbPassword;
 
     /**
      * @var string
      * Charset of database
      */
-    private string $_charSet = "SET NAMES UTF8";
+    private string $_charSet;
 
     /**
      * @var string
      * System User of database
      */
-    private string $_adminUserName = "";
+    private string $_adminUserName;
 
     /**
      * @var string
      * Password of System User
      */
-    private string $_adminPassword = "";
+    private string $_adminPassword;
 
     /**
      * @var string
      */
-    private string $_collation = "utf8mb4_bin";
+    private string $_collation;
 
     #endregion
     
@@ -78,56 +78,38 @@ class MysqlDatabaseOption implements IDatabaseOption
     #region Constructor
     /**
      * Initializes Database configs
-     * @param string|null $databaseType
-     * @param string|null $host
-     * @param string|null $databaseName
-     * @param string|null $databaseUser
-     * @param string|null $databasePassword
-     * @param string|null $databaseAdmin
-     * @param string|null $databaseAdminPassword
-     * @param string|null $databaseScheme
-     * @param string|null $collation
-     * @param string|null $charSet
+     * @param string $host
+     * @param string $databaseName
+     * @param string $databaseUser
+     * @param string $databasePassword
+     * @param string $databaseAdmin
+     * @param string $databaseAdminPassword
+     * @param string $databaseScheme
+     * @param string $collation
+     * @param string $charSet
      */
     public function __construct(
-        string $host = null,
-        string $databaseName = null,
-        string $databaseUser = null,
-        string $databasePassword = null,
-        string $databaseAdmin = null,
-        string $databaseAdminPassword = null,
-        string $databaseScheme = null,
-        string $collation = null,
-        string $charSet = null)
+        string $host,
+        string $databaseName,
+        string $databaseUser,
+        string $databasePassword,
+        string $databaseAdmin,
+        string $databaseAdminPassword,
+        string $databaseScheme = "private",
+        string $collation = "SET NAMES UTF8",
+        string $charSet = "utf8mb4_bin")
     {
         $this->_type = DatabaseTypes::$MySql;
 
-        if(isset($host))
-            $this->_host = $host;
-
-        if(isset($databaseName))
-            $this->_dBName = $databaseName;
-
-        if(isset($databaseUser))
-            $this->_dbUser = $databaseUser;
-
-        if(isset($databasePassword))
-            $this->_dbPassword = $databasePassword;
-
-        if(isset($databaseAdmin))
-            $this->_adminUserName = $databaseAdmin;
-
-        if(isset($databaseAdminPassword))
-            $this->_adminPassword = $databaseAdminPassword;
-
-        if(isset($databaseScheme))
-            $this->_schemaName = $databaseScheme;
-
-        if(isset($collation))
-            $this->_collation = $collation;
-
-        if(isset($charSet))
-            $this->_charSet = $charSet;
+        $this->_host = $host;
+        $this->_dBName = $databaseName;
+        $this->_dbUser = $databaseUser;
+        $this->_dbPassword = $databasePassword;
+        $this->_adminUserName = $databaseAdmin;
+        $this->_adminPassword = $databaseAdminPassword;
+        $this->_schemaName = $databaseScheme;
+        $this->_collation = $collation;
+        $this->_charSet = $charSet;
 
     }
     #endregion

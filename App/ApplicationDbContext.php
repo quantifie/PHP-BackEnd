@@ -19,4 +19,5 @@ class ApplicationDbContext extends DbContext
 
         $this->Licenses = new MysqlTableProxy(License::class);
     }
+
 }
