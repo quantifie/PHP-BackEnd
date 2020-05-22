@@ -50,7 +50,8 @@ class MysqlSqlAdapter implements ISqlAdapter
     {
         $connectorFactory = new MysqlDatabaseConnectorFactory();
         $this->_mysqlConnection = $connectorFactory->GetConnector();
-        $this->logger = new MysqlLogger();
+        $context = new DbContext();
+        $this->logger = new MysqlLogger($context->Logs);
     }
     #endregion
 
@@ -88,7 +89,7 @@ class MysqlSqlAdapter implements ISqlAdapter
         try {
             $query->execute();
         } catch (PDOException $ex) {
-            MysqlLogger::Write("MySql Select clause", "Select Sql execution error on {$tableData->Name} table",
+            $this->logger->Write("MySql Select clause", "Select Sql execution error on {$tableData->Name} table",
                 LogType::$TableActions, PriorityType::$Error, $ex->getMessage());
             return false;
         }
@@ -196,7 +197,7 @@ class MysqlSqlAdapter implements ISqlAdapter
         try {
             $query->execute();
         } catch (PDOException $ex) {
-            MysqlLogger::Write("MySql Update clause", "Update Sql execution error on {$tableData->Name} table",
+            $this->logger->Write("MySql Update clause", "Update Sql execution error on {$tableData->Name} table",
                 LogType::$TableActions, PriorityType::$Error, $ex->getMessage());
             return false;
         }
@@ -225,7 +226,7 @@ class MysqlSqlAdapter implements ISqlAdapter
         try {
             $query->execute();
         } catch (PDOException $ex) {
-            MysqlLogger::Write("MySql Delete clause", "Delete Sql execution error on {$tableData->Name} table",
+            $this->logger->Write("MySql Delete clause", "Delete Sql execution error on {$tableData->Name} table",
                 LogType::$TableActions, PriorityType::$Error, $ex->getMessage());
             return false;
         }
