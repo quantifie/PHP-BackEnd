@@ -46,4 +46,11 @@ class CoreResponse implements IResponse
     {
         $this->_message = $message;
     }
+
+    function Object(): CoreResponseModel{
+        $object = new CoreResponseModel();
+        $object->Message = $this->_message;
+        $object->Number = $this->_number;
+        return $object;
+    }
 }

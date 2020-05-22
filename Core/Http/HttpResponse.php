@@ -5,6 +5,7 @@ namespace Core\Http;
 
 
 use Core\DataModels\CoreResponse;
+use Core\DataModels\CoreResponseModel;
 use Core\DataModels\IResponse;
 use Core\Options\ApplicationOptionFactory;
 
@@ -76,11 +77,13 @@ class HttpResponse
      * @param string $message
      * @param int $number
      * @param string $productionErrorMessage
-     * @return CoreResponse
+     * @return CoreResponseModel
      */
-    private static function CreateResponse(string $message, int $number, $productionErrorMessage): CoreResponse {
+    private static function CreateResponse(string $message, int $number, $productionErrorMessage): CoreResponseModel {
         $applicationOption = new ApplicationOptionFactory();
         $errorMessage = $applicationOption->Get()->IsDevelopment() === true ? $message : $productionErrorMessage;
-        return new CoreResponse($number, $errorMessage);
+
+        $response = new CoreResponse($number, $errorMessage);
+        return $response->Object();
     }
 }

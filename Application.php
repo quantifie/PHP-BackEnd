@@ -38,11 +38,13 @@ class Application
         $this->routes = new Routes();
         $this->dbContext = new ApplicationDbContext();
         $this->core = new Core($this->databaseOption, $this->applicationOption, $this->routes, $this->origins, $this->dbContext);
+
         $this->Seed();
         $this->Start();
     }
 
     private function Start(){
+
         $this->core->Start();
     }
 
@@ -60,6 +62,5 @@ class Application
             "Deleted" => 0,
             "LicenseeId" => 1
         ]);
-
     }
 }

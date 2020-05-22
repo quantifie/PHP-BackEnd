@@ -95,6 +95,7 @@ abstract class ApplicationHelper
      */
     public static function EnableCORS(array $allowedOrigins)
     {
+
         if (count($allowedOrigins) <= 0)
             return;
 

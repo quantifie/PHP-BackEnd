@@ -81,7 +81,6 @@ class Core
 
             $connectorFactory = new MysqlDatabaseConnectorFactory();
             $connectorFactory->SetDatabaseOption($this->_databaseOption);
-            $migration = null;
 
             $this->SetMigration();
 
@@ -101,7 +100,6 @@ class Core
 
         $url = isset($_SERVER['PATH_INFO']) ? $_SERVER['PATH_INFO'] : '';
         $url = trim($url, "/");
-
         $matchedRoute = $this->_routes->Search($url);
         if ($matchedRoute === false)
             HttpResponse::NotFound("Route not found", ErrorCodes::$RouteNotFound);
