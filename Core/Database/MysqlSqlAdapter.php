@@ -13,6 +13,7 @@ use Core\Database\TableActionContainers\OrderBy;
 use Core\Database\TableActionContainers\SelectTableData;
 use Core\Database\TableActionContainers\UpdateTableData;
 use Core\Database\TableActionContainers\Where;
+use Core\Libs\Helpers\Debug;
 use Core\Log\Enums\LogType;
 use Core\Log\Enums\PriorityType;
 use Core\Log\ILogger;
@@ -61,7 +62,7 @@ class MysqlSqlAdapter implements ISqlAdapter
      * @param Limit $limit
      * @param Where[] $wheres
      * @param OrderBy[] $orderBys
-     * @return array|bool|object
+     * @return array|null|object
      */
     public function Select(SelectTableData $tableData, ?Limit $limit, $wheres = [], $orderBys = [])
     {
@@ -91,7 +92,7 @@ class MysqlSqlAdapter implements ISqlAdapter
         } catch (PDOException $ex) {
             $this->logger->Write("MySql Select clause", "Select Sql execution error on {$tableData->Name} table",
                 LogType::$TableActions, PriorityType::$Error, $ex->getMessage());
-            return false;
+            return null;
         }
 
         $selectResult = $query->fetchAll(PDO::FETCH_OBJ);
@@ -105,14 +106,17 @@ class MysqlSqlAdapter implements ISqlAdapter
         }
 
         if ($tableData->ReturnType === SelectResultTypes::$Single)
-            $selectResult = $selectResult[0];
+            if (count($selectResult) > 0)
+                $selectResult = $selectResult[0];
+            else $selectResult = null;
+
 
         return $selectResult;
     }
 
     /**
      * @param InsertTableData $tableData
-     * @return PDORow|bool
+     * @return PDORow|null
      */
     public function Insert(InsertTableData $tableData)
     {
@@ -140,7 +144,7 @@ class MysqlSqlAdapter implements ISqlAdapter
         $insertString .= ") ";
 
         if (!isset($this->_mysqlConnection->Pdo) )
-            return false;
+            return null;
 
         $query = $this->_mysqlConnection->Pdo->prepare($insertString);
 
@@ -159,14 +163,14 @@ class MysqlSqlAdapter implements ISqlAdapter
         if ($result > 0) {
             return $this->ReturnLastRecord($tableData->Name, "Id")[0];
         } else {
-            return false;
+            return null;
         }
     }
 
     /**
      * @param UpdateTableData $tableData
      * @param Where[] $wheres
-     * @return int|bool
+     * @return int|null
      */
     public function Update(UpdateTableData $tableData, $wheres = [])
     {
@@ -184,7 +188,7 @@ class MysqlSqlAdapter implements ISqlAdapter
         $updateString .= $this->PrepareWhere($tableData, $wheres);
 
         if (!isset($this->_mysqlConnection->Pdo) )
-            return false;
+            return null;
 
         $query = $this->_mysqlConnection->Pdo->prepare($updateString);
 
@@ -199,7 +203,7 @@ class MysqlSqlAdapter implements ISqlAdapter
         } catch (PDOException $ex) {
             $this->logger->Write("MySql Update clause", "Update Sql execution error on {$tableData->Name} table",
                 LogType::$TableActions, PriorityType::$Error, $ex->getMessage());
-            return false;
+            return null;
         }
 
         return $query->rowCount();
@@ -217,7 +221,7 @@ class MysqlSqlAdapter implements ISqlAdapter
         $deleteString .= $this->PrepareWhere($tableData, $wheres);
 
         if (!isset($this->_mysqlConnection->Pdo) )
-            return false;
+            return null;
 
         $query = $this->_mysqlConnection->Pdo->prepare($deleteString);
 
@@ -228,7 +232,7 @@ class MysqlSqlAdapter implements ISqlAdapter
         } catch (PDOException $ex) {
             $this->logger->Write("MySql Delete clause", "Delete Sql execution error on {$tableData->Name} table",
                 LogType::$TableActions, PriorityType::$Error, $ex->getMessage());
-            return false;
+            return null;
         }
 
         return $query->rowCount();

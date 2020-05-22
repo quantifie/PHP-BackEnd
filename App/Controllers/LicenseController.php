@@ -47,11 +47,11 @@ class LicenseController extends Controller
     {
         /** @var LicenseGetRequest $request */
         $request = $this->Request->Body;
-        RequestHelper::CheckRequirements($request, ["Token", "Id"]);
+        RequestHelper::CheckRequirements($request, ["Token", "Id", "IncludeSubLicenses"]);
 
         $license = $this->_logic->Get($request->Id, $request->IncludeSubLicenses);
 
-        if ($license === false)
+        if (!isset($license))
             HttpResponse::Error("License not found", ErrorCodes::$RecordNotFound);
 
         $response = new LicenseGetResponse();

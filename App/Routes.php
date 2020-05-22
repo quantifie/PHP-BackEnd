@@ -25,10 +25,9 @@ class Routes extends RouteBase
     {
         parent::__construct();
 
-        $this->Add("lincese/add", LicenseController::class, "Add", RequestTypes::$Post)
-            ->Add("lincese/get", LicenseController::class, "Get", RequestTypes::$Post);
+        $this->Add("license/add", LicenseController::class, "Add", RequestTypes::$Post)
+            ->Add("license/get", LicenseController::class, "Get", RequestTypes::$Post);
     }
-
 
     #endregion
     

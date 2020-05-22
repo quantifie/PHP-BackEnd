@@ -8,5 +8,5 @@ use App\DatabaseModels\License;
 
 class LicenseGetResponse extends ResponseBase
 {
-    public License $License;
+    public ?License $License;
 }

@@ -9,6 +9,7 @@ use Core\Database\Enums\KeyValueOperators;
 use Core\Database\Enums\SelectResultTypes;
 use Core\Database\TableActionContainers\IncludeTableData;
 use Core\Libs\Helpers\DateTime;
+use Core\Libs\Helpers\Debug;
 use Core\Libs\Helpers\Mapper;
 use Core\Security\Token;
 
@@ -33,7 +34,7 @@ class LicenseLogic
 
     /**
      * @param License $license
-     * @return false|License
+     * @return null|License
      */
     public function Add(License $license)
     {
@@ -50,8 +51,8 @@ class LicenseLogic
             "LicenseToken" => Token::Create(256)
         ]);
 
-        if ($addLicense === false)
-            return false;
+        if (isset($addLicense))
+            return null;
 
         return Mapper::Map($addLicense, License::class, true);
     }
@@ -85,6 +86,7 @@ class LicenseLogic
         $license = $this->_context->Licenses->Select([], $includeSubLicenseObject)
             ->Where("Id", KeyValueOperators::$Equal, $id)
             ->Single();
+
         return Mapper::Map($license, License::class, true);
     }
 }

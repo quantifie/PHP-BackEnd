@@ -28,7 +28,7 @@ class Migration
         $databaseMigration->GrantUser($databaseOption->DbUser(), $databaseOption->Host(), $databaseOption->DBName());
         $databaseMigration->CreateDatabase($databaseOption->DBName(), $databaseOption->SchemaName(), $databaseOption->Collation());
 
-        $databaseMigration->CreateTables($databaseOption->DBName());
+        $databaseMigration->CreateTables($databaseOption->DBName(), $databaseOption->Collation());
     }
     #endregion
 

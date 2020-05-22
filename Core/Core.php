@@ -12,6 +12,7 @@ use Core\Exceptions\ApplicationNotCreatedException;
 use Core\Http\HttpRequest;
 use Core\Http\HttpResponse;
 use Core\Libs\Helpers\ApplicationHelper;
+use Core\Libs\Helpers\Debug;
 use Core\Libs\Helpers\RequestHelper;
 use Core\Options\ApplicationOptionFactory;
 use Core\Options\IApplicationOption;

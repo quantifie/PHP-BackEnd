@@ -148,16 +148,17 @@ class MysqlDatabaseMigration implements IDatabaseMigration
 
     /**
      * @param string $databaseName
+     * @param string $collation
      * @return bool
      * @throws Exception
      */
-    public function CreateTables(string $databaseName): bool
+    public function CreateTables(string $databaseName, string $collation): bool
     {
 
         $allTablesCreated = true;
         /** @var MysqlTableProxy $table */
         foreach ($this->_context as $table) {
-            $this->CreateTable($table, $databaseName);
+            $this->CreateTable($table, $databaseName, $collation);
         }
 
         return $allTablesCreated;
@@ -197,15 +198,16 @@ class MysqlDatabaseMigration implements IDatabaseMigration
     /**
      * @param MysqlTableProxy $table
      * @param string $databaseName
+     * @param string $collation
      * @throws Exception
      */
-    public function CreateTable(MysqlTableProxy $table, string $databaseName)
+    public function CreateTable(MysqlTableProxy $table, string $databaseName, string $collation)
     {
         $tableExists = $this->CheckTableExists($table->TableName(), $databaseName);
         if ($tableExists) {
             $this->AlterTable($table, $databaseName);
         } else {
-            $this->CreateTableFromScratch($table, $databaseName);
+            $this->CreateTableFromScratch($table, $databaseName, $collation);
         }
 
     }
@@ -234,10 +236,11 @@ class MysqlDatabaseMigration implements IDatabaseMigration
     /**
      * @param MysqlTableProxy $table
      * @param string $databaseName
+     * @param string $collation
      * @return bool
      * @throws Exception
      */
-    private function CreateTableFromScratch(MysqlTableProxy $table, string $databaseName)
+    private function CreateTableFromScratch(MysqlTableProxy $table, string $databaseName, string $collation)
     {
         $tableSql = "CREATE TABLE IF NOT EXISTS {$databaseName}.{$table->TableName()}";
 
@@ -259,7 +262,7 @@ class MysqlDatabaseMigration implements IDatabaseMigration
 
         $tableSql = rtrim($tableSql, ", ");
 
-        $tableSql .= " ) COLLATE=utf8mb4_bin";
+        $tableSql .= " ) COLLATE=" . $collation;
 
         try {
             $this->_connection->Pdo->exec($tableSql);

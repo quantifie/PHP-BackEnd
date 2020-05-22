@@ -44,16 +44,18 @@ interface IDatabaseMigration
 
     /**
      * @param string $databaseName
+     * @param string $collation
      * @return mixed
      */
-    function CreateTables(string $databaseName);
+    function CreateTables(string $databaseName, string $collation);
 
     /**
      * @param MysqlTableProxy $table
      * @param string $databaseName
+     * @param string $collation
      * @return mixed
      */
-    function CreateTable(MysqlTableProxy $table, string $databaseName);
+    function CreateTable(MysqlTableProxy $table, string $databaseName, string $collation);
 
     /**
      * @param MysqlTableProxy $table

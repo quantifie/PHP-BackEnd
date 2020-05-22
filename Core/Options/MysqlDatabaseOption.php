@@ -96,8 +96,8 @@ class MysqlDatabaseOption implements IDatabaseOption
         string $databaseAdmin,
         string $databaseAdminPassword,
         string $databaseScheme = "private",
-        string $collation = "SET NAMES UTF8",
-        string $charSet = "utf8mb4_bin")
+        string $collation = "utf8mb4_bin",
+        string $charSet = "SET NAMES UTF8")
     {
         $this->_type = DatabaseTypes::$MySql;
 
